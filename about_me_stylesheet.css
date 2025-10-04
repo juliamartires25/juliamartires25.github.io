@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: #f9f7f3; /* soft beige background */
-    color: #222; /* near-black text */
+    background: #f9f7f3;
+    color: #222;
 }
 
 body.dark-mode {
@@ -15,8 +15,8 @@ body.dark-mode {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #e0d3b8, #c2b280); /* beige gradient */
-    color: #111; /* dark text */
+    background: linear-gradient(135deg, #e0d3b8, #c2b280);
+    color: #111;
     text-align: center;
     padding: 2rem 1rem;
     border-bottom: 5px solid #b8a97a;
@@ -27,7 +27,7 @@ header h1 {
     margin: 0;
     font-size: 2.5rem;
     letter-spacing: 1px;
-    color: #000; /* solid black for contrast */
+    color: #000;
 }
 
 header nav {
@@ -43,7 +43,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #7b6f47; /* warm dark beige for hover */
+    color: #7b6f47;
 }
 
 /* Section Styling */
@@ -51,7 +51,7 @@ section {
     margin: 40px auto;
     max-width: 1000px;
     padding: 20px;
-    background: #fff; /* clean white */
+    background: #fff;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
@@ -62,18 +62,18 @@ body.dark-mode section {
 }
 
 #about h1 {
-    margin-bottom: 20px; /* adds consistent space below heading */
+    margin-bottom: 20px;
 }
 
 section h1, section h2, section h3 {
-    color: #7b6f47; /* deep beige accent */
+    color: #7b6f47;
     margin-bottom: 10px;
 }
 
 #about img {
-    float: left;           /* pushes image to the left */
-    margin-right: 20px;    /* space between image and text */
-    margin-bottom: 10px;   /* space below image */
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
     width: 180px;
     height: auto;
     border-radius: 50%;
@@ -102,8 +102,8 @@ section h1, section h2, section h3 {
 }
 
 body.dark-mode .portfolio-item {
-    background: #2e2e2e;  /* dark card background */
-    color: #f5f5f5;       /* bright text for readability */
+    background: #2e2e2e;
+    color: #f5f5f5;
     box-shadow: 0px 3px 8px rgba(255,255,255,0.05);
 
 .image-placeholder img {
@@ -123,7 +123,7 @@ body.dark-mode .portfolio-item {
 
 /* Buttons */
 button {
-    background: #7b6f47; /* warm dark beige */
+    background: #7b6f47;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -134,7 +134,7 @@ button {
 }
 
 button:hover {
-    background: #b8a97a; /* lighter beige hover */
+    background: #b8a97a;
     transform: scale(1.05);
 }
 
@@ -167,4 +167,6 @@ body.dark-mode footer {
 
 #theme-toggle {
     margin-top: 10px;
+
 }
+
