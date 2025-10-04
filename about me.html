@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julia Martires - Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="about_me_stylesheet.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Julia Martires</h1>
+    <p>Welcome to my portfolio website!</p>
+    <!-- <button onclick="showMessage()">Click me!</button> -->
+    <nav>
+      <h2>
+        <a href="#about">About Me</a> | 
+        <a href="#portfolio">Portfolio</a> | 
+        <a href="#events">Events</a> | 
+        <a href="#projects">Projects</a>
+      </h2>
+    </nav>
+  </header>
+
+<button id="theme-toggle">Toggle Dark Mode</button>
+
+  <!-- SCRIPT -->
+  <script>
+    function showMessage() {
+      alert("Welcome to my accessible profile!");
+    }
+    function openPopup() {
+      window.open(
+        "https://github.com/UH-HCC/your-accessible-and-usable-profile-site-jm23acm/blob/main/reports/README.md",
+        "Zomato",
+        "width=600,height=400,top=100,left=100"
+      );
+    }
+  </script>
+
+  <!-- ABOUT -->
+  <section id="about">
+  <div class="about-me">
+    <h1>About Me</h1>
+    <img src="images/mypic.jpeg" width="300" height="300" alt="Julia Martires photo">
+    <p>I am a second-year Computer Science student at the University of Hertfordshire, with a background in Python, Java, and C++. My academic projects, such as developing an application on Versace and a bank management system, have strengthened my problem-solving skills.</p>
+    <p>I am passionate about applying my technical knowledge to real-world projects and making a difference in a collaborative environment. In my free time, I enjoy swimming, rollerskating, and exploring creative hobbies, which help me stay balanced and energized.</p>
+  </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h1>Portfolio</h1>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <div class="image-placeholder">
+          <img src="images/bcs.svg" width="82" height="82" alt="BCS logo">
+        </div>
+        <p><strong>Web Developer</strong><br>BCS<br>Hertfordshire</p>
+      </div>
+      <div class="portfolio-item">
+        <div class="image-placeholder">
+          <img src="images/satrex.jpg" width="100" height="100" alt="Satrex logo">
+        </div>
+        <p><strong>Junior Software Developer</strong><br>Satrex Ltd<br>Cambridge</p>
+      </div>
+    <div class="portfolio-item">
+        <div class="image-placeholder">
+          <img src="images/hertssu.png" width="100" height="100" alt="Herts xSU logo">
+        </div>
+        <p><strong>Society Committee Leader</strong><br>Herts SU<br>Hertfordshire</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events">
+    <h2>Events</h2>
+    <p>Here are some shows / webinars / challenges I have participated in:</p>
+
+    <h3>January 2025</h3>
+    <div class="event">
+      <p><strong>Web Accessibility Hackathon</strong></p>
+      <p>A hackathon to create a website that follows the WCAG guidelines. </p>
+      <p>University of Hertfordshire</p>
+      <p>9th January</p>
+    </div>
+
+    <h3>February 2025</h3>
+    <div class="event">
+      <p><strong>Women in Engineering & Technology Event</strong></p>
+      <p>A team of incredible speakers shared their advice on how to succeed as a woman in STEM and delivered practical skills workshops. It was a phenomenal afternoon of learning & networking with inspiring role models and leading employers.</p>
+      <p>London</p>
+      <p>21st February</p>
+    </div>
+
+    <h3>June 2025</h3>
+    <div class="event">
+      <p><strong>Huddle Hive</strong></p>
+      <p>A challenge to code for innovation where we worked together to build a proof-of-concept for a product.</p>
+      <p>London</p>
+      <p>28-29th June</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <!-- <h4>Project Zomato</h4> -->
+    <p>Click the button below to open a pop-up window of project:</p>
+    <button onclick="openPopup()">Open Pop-Up</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>All content © Julia Martires</p>
+    <p>Contact Me: jm23acm@herts.ac.uk</p>
+    <p>Site developed by Julia Martires</p>
+  </footer>
+
+<script>
+document.getElementById('theme-toggle').onclick = function() {
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem('theme', 
+    document.body.classList.contains('dark-mode') ? 'dark' : 'light'
+  );
+};
+
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+}
+</script>
+
+</body>
+</html>
+
+
